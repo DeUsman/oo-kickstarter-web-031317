@@ -1,3 +1,4 @@
+
 describe 'Backer - ::new' do
   it 'takes a name on initialization' do
     backer = Backer.new("Avi")
@@ -45,7 +46,7 @@ describe 'Backer - More Advanced #back_project' do
     hoverboard = Project.new("Awesome Hoverboard")
     logan.back_project(hoverboard)
 
-    # If by this point, the project knows about a new backer, where does that mean
+    # If by this point, the project knows  about a new backer, where does that mean
     # some more magic needs to happen? There's really only one place it can happen.
     expect(hoverboard.backers).to include(logan)
   end
